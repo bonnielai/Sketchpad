@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+<head lang="en">
+	<meta charset="utf-8"/>
+	<!--移动端适配-->
+	<meta name="viewport" content="width=device-width,height:device-height,initial-scale:1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<title>Sketchpad</title>
+	<script src="./js/jquery-2.2.1.min.js" type="text/javascript"></script>
+	<link href="./css/handwriting.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<canvas id="canvas">
+		您的浏览器不支持canvas
+	</canvas>
+	<div id="controller">
+		<div id="black_btn" class="color_btn color_btn_selected"></div>
+		<div id="blue_btn" class="color_btn "></div>
+		<div id="green_btn" class="color_btn"></div>
+		<div id="red_btn" class="color_btn"></div>
+		<div id="orange_btn" class="color_btn"></div>
+		<div id="yellow_btn" class="color_btn"></div>
+		<div id="clear_btn" class="op_btn">清除</div>
+		<div id="lineWidthDiv" class="lineWidthDiv">
+			<label>笔尖流量</label>
+			<select id="lineWidth">
+				<option value="10">10</option>
+				<option value="20">20</option>
+				<option value="30" selected>30</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+			</select>
+		</div>
+		<div class="clearfix" />
+	</div>
+	<script src="./js/handwriteing.js"  type="text/javascript"></script>
+</body>
+</html>
